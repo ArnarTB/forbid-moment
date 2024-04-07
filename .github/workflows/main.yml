@@ -1,0 +1,30 @@
+name: main
+
+on:
+  push:
+  
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test and Publish
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+        
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'v20.11.1'
+          regirsty-url: https://npm.pkg.github.com/
+          scope: 'ArnarTB"
+
+      - name: Install Dependencies
+        run: npm ci
+        
+      - name: publish package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+          
