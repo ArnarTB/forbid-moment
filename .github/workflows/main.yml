@@ -20,7 +20,7 @@ jobs:
           scope: '@ArnarTB'
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm i
         
       - name: publish package
         run: npm publish
