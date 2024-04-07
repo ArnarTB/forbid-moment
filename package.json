@@ -1,5 +1,5 @@
 {
-  "name": "@arnartb/elsint-plugin-forbid-moment",
+  "name": "@arnartb/eslint-plugin-forbid-moment",
   "version": "1.0.6",
   "description": "",
   "type": "commonjs",
