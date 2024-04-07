@@ -9,4 +9,4 @@ const rules = Object.fromEntries(
   ruleFiles.map((file) => [path.basename(file, ".js"), require("./" + file)])
 );
 
-module.exports = { rules };
+module.exports = { rules: {'no-moment': require('./no-moment')} };
