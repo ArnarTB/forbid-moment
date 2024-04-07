@@ -1,0 +1,35 @@
+{
+  "name": "assignment-2-testing",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{js,jsx,cjs,ts,tsx,json,css,scss,md,xml}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,cjs,ts,tsx,json,css,scss,md,xml}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "moment": "^2.29.4",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.20",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "@typescript-eslint/rule-tester": "^7.1.0",
+    "@vitest/coverage-c8": "^0.33.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-rule": "file:./eslint",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.1.0",
+    "vitest": "^0.30.1"
+  }
+}
